@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.exoplaform.org/xml/ns/kernel_1_0.xsd http://www.exoplaform.org/xml/ns/kernel_1_0.xsd"
+        xmlns="http://www.exoplaform.org/xml/ns/kernel_1_0.xsd">
+  <component>
+    <key>gatein.api.service</key>
+    <type>org.gatein.api.rest.APIApplication</type>
+  </component>
+
+<!--  <component>
+    <key>org.gatein.api.GateIn</key>
+    <type>org.gatein.api.rest.integration.mock.MockGateIn</type>
+  </component> -->
+
+</configuration>

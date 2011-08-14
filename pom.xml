@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ JBoss, a division of Red Hat
+  ~ Copyright 2011, Red Hat Middleware, LLC, and individual
+  ~ contributors as indicated by the @authors tag. See the
+  ~ copyright.txt in the distribution for a full listing of
+  ~ individual contributors.
+  ~
+  ~ This is free software; you can redistribute it and/or modify it
+  ~ under the terms of the GNU Lesser General Public License as
+  ~ published by the Free Software Foundation; either version 2.1 of
+  ~ the License, or (at your option) any later version.
+  ~
+  ~ This software is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+  ~ Lesser General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Lesser General Public
+  ~ License along with this software; if not, write to the Free
+  ~ Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
+  ~ 02110-1301 USA, or see the FSF site: http://www.fsf.org.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+   <modelVersion>4.0.0</modelVersion>
+
+   <groupId>org.gatein.api</groupId>
+   <artifactId>gatein-rest-api</artifactId>
+   <version>0.1-SNAPSHOT</version>
+<!--   <packaging>war</packaging> -->
+
+   <parent>
+      <groupId>org.gatein</groupId>
+      <artifactId>gatein-parent</artifactId>
+      <version>1.1.0-Beta02</version>
+   </parent>
+
+   <properties>
+     <org.exoplatform.ws.version>2.2.0-CR2</org.exoplatform.ws.version>
+     <testng.version>5.14.10</testng.version>
+     <org.gatein.api.version>1.0.0-Beta02-SNAPSHOT</org.gatein.api.version>
+     <apache.http.components.version>4.0.3</apache.http.components.version>
+   </properties>
+
+   <dependencies>
+<!--      <dependency>
+         <groupId>org.gatein.api</groupId>
+         <artifactId>gatein-rest-api-config</artifactId>
+         <version>0.1-SNAPSHOT</version>
+      </dependency> -->
+      <dependency>
+         <groupId>org.gatein.api</groupId>
+         <artifactId>gatein-java-api</artifactId>
+         <version>${org.gatein.api.version}</version>
+      </dependency>
+      <dependency>
+         <groupId>org.exoplatform.ws</groupId>
+         <artifactId>exo.ws.rest.core</artifactId>
+         <version>${org.exoplatform.ws.version}</version>
+         <scope>provided</scope>
+      </dependency>
+      <dependency>
+         <groupId>org.apache.httpcomponents</groupId>
+         <artifactId>httpclient</artifactId>
+         <version>${apache.http.components.version}</version>
+         <scope>test</scope>
+      </dependency>
+      <dependency>
+         <groupId>org.testng</groupId>
+         <artifactId>testng</artifactId>
+         <version>${testng.version}</version>
+         <scope>test</scope>
+      </dependency>
+    <dependency>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
+      <version>1.7.1</version>
+      <scope>compile</scope>
+    </dependency>
+
+    <dependency>
+    <groupId>org.codehaus.jackson</groupId>
+    <artifactId>jackson-core-asl</artifactId>
+    <version>1.8.2</version>
+    </dependency>
+    <dependency>
+    <groupId>org.codehaus.jackson</groupId>
+    <artifactId>jackson-mapper-asl</artifactId>
+    <version>1.8.2</version>
+    </dependency>
+    <dependency>
+    <groupId>org.codehaus.jettison</groupId>
+    <artifactId>jettison</artifactId>
+    <version>1.3</version>
+    </dependency>
+
+   </dependencies>
+
+</project>
